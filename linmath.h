@@ -5,10 +5,14 @@
 #include <math.h>
 #include <string.h>
 
+#ifndef LINMATH_H_FUNC
+
 #ifdef LINMATH_NO_INLINE
 #define LINMATH_H_FUNC static
 #else
 #define LINMATH_H_FUNC static inline
+#endif
+
 #endif
 
 #define LINMATH_H_DEFINE_VEC(n) \
